@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="backslash" format="2">
+  <advance width="399"/>
+  <unicode hex="005C"/>
+  <outline>
+    <contour>
+      <point x="60" y="759" type="curve"/>
+      <point x="0" y="759" type="line"/>
+      <point x="108" y="450"/>
+      <point x="211" y="141"/>
+      <point x="312" y="-168" type="curve"/>
+      <point x="399" y="-168" type="line"/>
+      <point x="279" y="141"/>
+      <point x="161" y="450"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2025-05-05 11:37:37 +0000</string>
+      <key>com.schriftgestaltung.Glyphs.leftMetricsKey</key>
+      <string>slash</string>
+      <key>com.schriftgestaltung.Glyphs.rightMetricsKey</key>
+      <string>slash</string>
+      <key>public.markColor</key>
+      <string>0.75,0.75,0.75,1</string>
+    </dict>
+  </lib>
+</glyph>
