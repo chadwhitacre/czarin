@@ -7,7 +7,7 @@
     <key>capHeight</key>
     <integer>710</integer>
     <key>copyright</key>
-    <string>Copyright (c) 2025 Jerome Knebusch. All rights reserved. Licenced under the SIL Open Font Licence (OFL 1.1). With reserved font name "Czarin".</string>
+    <string>Copyright (c) 2025 Jerome Knebusch. All rights reserved. Licenced under the SIL Open Font Licence (OFL 1.1).</string>
     <key>descender</key>
     <integer>-230</integer>
     <key>familyName</key>
@@ -15,9 +15,9 @@
     <key>italicAngle</key>
     <integer>0</integer>
     <key>openTypeHeadCreated</key>
-    <string>2025/05/06 15:03:58</string>
+    <string>2025/09/24 14:43:07</string>
     <key>openTypeNameDescription</key>
-    <string>Czarin is an Open Source typeface, faithfully revived by Jerome Knebusch in 2025, commissioned by Chad Whitacre. Czarin and Czarin Title were produced by Baltimore Type &amp; Composition Corporation about 1948, the name being derived from the Czarnowsky family which owned the foundry. Czarin Title, issued first, is a copy of Offenbach Halbfett [Semibold], a set of pen-drawn capitals designed originally in a thin weight by Rudolf Koch, published 1937 posthumously by the Klingspor foundry in Germany. Czarin has minor changes in a few characters, but adds a lowercase, designed by Edwin W. Shaar, that is different from that of Steel. In Stahl, as named in Germany, Koch's student Hans Kuehne added roman lowercases to the capitals of Offenbach, published in 1939 by Klingspor. Licenced under the SIL Open Font Licence (OFL 1.1). With reserved font name "Czarin". Copyright (c) 2025 Jerome Knebusch. All rights reserved.</string>
+    <string>Czarin is an Open Source typeface, faithfully revived by Jerome Knebusch in 2025, commissioned by Chad Whitacre. Czarin and Czarin Title were produced by Baltimore Type &amp; Composition Corporation about 1948, the name being derived from the Czarnowsky family which owned the foundry. Czarin Title, issued first, is a copy of Offenbach Halbfett [Semibold], a set of pen-drawn capitals designed originally in a thin weight by Rudolf Koch, published 1937 posthumously by the Klingspor foundry in Germany. Czarin has minor changes in a few characters, but adds a lowercase, designed by Edwin W. Shaar, that is different from that of Steel. In Stahl, as named in Germany, Koch's student Hans Kuehne added roman lowercases to the capitals of Offenbach, published in 1939 by Klingspor. Licenced under the SIL Open Font Licence (OFL 1.1). Copyright (c) 2025 Jerome Knebusch. All rights reserved.</string>
     <key>openTypeNameDesigner</key>
     <string>Rudolf Koch, Edwin W. Shaar, Jerome Knebusch</string>
     <key>openTypeNameDesignerURL</key>
@@ -33,7 +33,7 @@
     <key>openTypeNamePreferredSubfamilyName</key>
     <string>Medium</string>
     <key>openTypeNameVersion</key>
-    <string>Version 1.0</string>
+    <string>Version 1.1</string>
     <key>openTypeOS2Selection</key>
     <array>
       <integer>7</integer>

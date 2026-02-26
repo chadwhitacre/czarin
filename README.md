@@ -19,7 +19,6 @@ published in 1939 by Klingspor.
 
 ## Legal
 
-Copyright &copy; 2025, [Jérôme Knebusch](https://www.jeromeknebusch.net/), with
-Reserved Font Name "Czarin".
+Copyright &copy; 2025, [Jérôme Knebusch](https://www.jeromeknebusch.net/).
 
 Licensed under the [SIL Open Font Licence (OFL 1.1)](LICENSE.md).

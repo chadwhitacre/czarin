@@ -17,9 +17,11 @@
 @MMK_L_X = [X];
 @MMK_L_Y = [Y];
 @MMK_L_Z = [Z];
+@MMK_L_asterisk = [asterisk];
 @MMK_L_backslash = [backslash];
 @MMK_L_c = [c];
 @MMK_L_colon = [colon];
+@MMK_L_degree = [degree];
 @MMK_L_e = [e ae oe];
 @MMK_L_exclam = [exclam];
 @MMK_L_f = [f f_f.liga];
@@ -46,6 +48,7 @@
 @MMK_L_slash = [slash];
 @MMK_L_t = [t];
 @MMK_L_three = [three];
+@MMK_L_trademark = [trademark registered];
 @MMK_L_two = [two];
 @MMK_L_v = [v w y];
 @MMK_L_x = [x];
@@ -63,8 +66,10 @@
 @MMK_R_Y = [Y];
 @MMK_R_Z = [Z];
 @MMK_R_a = [a ae];
+@MMK_R_asterisk = [asterisk];
 @MMK_R_backslash = [backslash];
 @MMK_R_colon = [colon];
+@MMK_R_degree = [degree];
 @MMK_R_exclam = [exclam];
 @MMK_R_f = [f fi fl f_f.liga f_f_i.liga f_f_l.liga];
 @MMK_R_four = [four];
@@ -90,6 +95,7 @@
 @MMK_R_slash = [slash];
 @MMK_R_t = [t];
 @MMK_R_three = [three];
+@MMK_R_trademark = [trademark registered];
 @MMK_R_two = [two];
 @MMK_R_v = [v w y];
 @MMK_R_x = [x];
@@ -109,21 +115,7 @@ languagesystem DFLT dflt;
 languagesystem latn dflt;
 ### close prefix 'Languagesystems' ###
 
-### feature:0:ccmp ###
-feature ccmp {
-### open feature 'ccmp' ###
-lookup ccmp_latn_1 {
-	lookupflag 0;
-	sub fi by f i;
-	sub fl by f l;
-} ccmp_latn_1;
-
-script latn;
-lookup ccmp_latn_1;
-### close feature 'ccmp' ###
-} ccmp;
-
-### feature:1:liga ###
+### feature:0:liga ###
 feature liga {
 ### open feature 'liga' ###
 lookupflag IgnoreMarks;
@@ -135,7 +127,7 @@ sub f l by fl;
 ### close feature 'liga' ###
 } liga;
 
-### feature:2:cpsp ###
+### feature:1:cpsp ###
 feature cpsp {
 ### open feature 'cpsp' ###
 pos @Uppercase <10 0 15 0>;
@@ -216,6 +208,7 @@ feature kern {
 		pos @MMK_L_four @MMK_R_V -20;
 		pos @MMK_L_four @MMK_R_X -10;
 		pos @MMK_L_four @MMK_R_Y -30;
+		pos @MMK_L_four @MMK_R_degree -30;
 		pos @MMK_L_four @MMK_R_four 20;
 		pos @MMK_L_four @MMK_R_one -20;
 		pos @MMK_L_four @MMK_R_quotesingle -30;
@@ -237,6 +230,7 @@ feature kern {
 		pos @MMK_L_seven @MMK_R_a -40;
 		pos @MMK_L_seven @MMK_R_backslash 20;
 		pos @MMK_L_seven @MMK_R_colon -60;
+		pos @MMK_L_seven @MMK_R_degree 10;
 		pos @MMK_L_seven @MMK_R_four -40;
 		pos @MMK_L_seven @MMK_R_guilsinglleft -50;
 		pos @MMK_L_seven @MMK_R_guilsinglright -50;
@@ -255,6 +249,7 @@ feature kern {
 		pos @MMK_L_six @MMK_R_V -20;
 		pos @MMK_L_six @MMK_R_X -10;
 		pos @MMK_L_six @MMK_R_Y -30;
+		pos @MMK_L_six @MMK_R_degree -50;
 		pos @MMK_L_six @MMK_R_one -10;
 		pos @MMK_L_six @MMK_R_period -20;
 		pos @MMK_L_six @MMK_R_quotesingle -40;
@@ -268,6 +263,7 @@ feature kern {
 		pos @MMK_L_zero @MMK_R_X -30;
 		pos @MMK_L_zero @MMK_R_Y -30;
 		pos @MMK_L_zero @MMK_R_Z -10;
+		pos @MMK_L_zero @MMK_R_degree -20;
 		pos @MMK_L_zero @MMK_R_period -20;
 		pos @MMK_L_zero @MMK_R_quotesingle -20;
 	} kern_DFLT;
@@ -299,9 +295,11 @@ feature kern {
 		pos @MMK_L_A @MMK_R_V -60;
 		pos @MMK_L_A @MMK_R_Y -70;
 		pos @MMK_L_A @MMK_R_Z 10;
+		pos @MMK_L_A @MMK_R_asterisk -60;
 		pos @MMK_L_A @MMK_R_backslash -30;
 		pos @MMK_L_A @MMK_R_quotesingle -50;
 		pos @MMK_L_A @MMK_R_semicolon 30;
+		pos @MMK_L_A @MMK_R_trademark -40;
 		pos @MMK_L_A @MMK_R_v -10;
 		pos @MMK_L_B @MMK_R_Y -10;
 		pos @MMK_L_B @MMK_R_o 20;
@@ -312,6 +310,7 @@ feature kern {
 		pos @MMK_L_C @MMK_R_V 20;
 		pos @MMK_L_C @MMK_R_Y 20;
 		pos @MMK_L_C @MMK_R_periodcentered -30;
+		pos @MMK_L_C @MMK_R_trademark 30;
 		pos @MMK_L_C @MMK_R_v -20;
 		pos @MMK_L_F @MMK_R_A -60;
 		pos @MMK_L_F @MMK_R_J -90;
@@ -330,6 +329,7 @@ feature kern {
 		pos @MMK_L_K @MMK_R_A 10;
 		pos @MMK_L_K @MMK_R_O -30;
 		pos @MMK_L_K @MMK_R_Y 10;
+		pos @MMK_L_K @MMK_R_asterisk -10;
 		pos @MMK_L_K @MMK_R_backslash 40;
 		pos @MMK_L_K @MMK_R_four -10;
 		pos @MMK_L_K @MMK_R_nine -20;
@@ -340,6 +340,7 @@ feature kern {
 		pos @MMK_L_L @MMK_R_T -60;
 		pos @MMK_L_L @MMK_R_V -40;
 		pos @MMK_L_L @MMK_R_Y -70;
+		pos @MMK_L_L @MMK_R_asterisk -70;
 		pos @MMK_L_L @MMK_R_backslash -20;
 		pos @MMK_L_L @MMK_R_four -30;
 		pos @MMK_L_L @MMK_R_nine -30;
@@ -347,8 +348,10 @@ feature kern {
 		pos @MMK_L_L @MMK_R_periodcentered -30;
 		pos @MMK_L_L @MMK_R_quotesingle -70;
 		pos @MMK_L_L @MMK_R_semicolon 30;
+		pos @MMK_L_L @MMK_R_trademark -60;
 		pos @MMK_L_M @MMK_R_V -10;
 		pos @MMK_L_M @MMK_R_Y -10;
+		pos @MMK_L_M @MMK_R_asterisk -10;
 		pos @MMK_L_M @MMK_R_quotesingle -10;
 		pos @MMK_L_O @MMK_R_A -30;
 		pos @MMK_L_O @MMK_R_J -10;
@@ -369,6 +372,7 @@ feature kern {
 		pos @MMK_L_P @MMK_R_Y -20;
 		pos @MMK_L_P @MMK_R_Z -20;
 		pos @MMK_L_P @MMK_R_a -20;
+		pos @MMK_L_P @MMK_R_asterisk 20;
 		pos @MMK_L_P @MMK_R_colon -20;
 		pos @MMK_L_P @MMK_R_four -20;
 		pos @MMK_L_P @MMK_R_guilsinglleft -20;
@@ -380,6 +384,7 @@ feature kern {
 		pos @MMK_L_P @MMK_R_semicolon -30;
 		pos @MMK_L_P @MMK_R_six -30;
 		pos @MMK_L_P @MMK_R_slash -70;
+		pos @MMK_L_P @MMK_R_trademark 20;
 		pos @MMK_L_P @MMK_R_v 20;
 		pos @MMK_L_R @MMK_R_A 10;
 		pos @MMK_L_R @MMK_R_Y -10;
@@ -457,6 +462,7 @@ feature kern {
 		pos @MMK_L_V @MMK_R_z -50;
 		pos @MMK_L_V @MMK_R_zero -20;
 		pos @MMK_L_X @MMK_R_O -20;
+		pos @MMK_L_X @MMK_R_asterisk -20;
 		pos @MMK_L_X @MMK_R_four -10;
 		pos @MMK_L_X @MMK_R_guilsinglleft -10;
 		pos @MMK_L_X @MMK_R_one -10;
@@ -472,6 +478,7 @@ feature kern {
 		pos @MMK_L_Y @MMK_R_V 10;
 		pos @MMK_L_Y @MMK_R_Y 10;
 		pos @MMK_L_Y @MMK_R_a -60;
+		pos @MMK_L_Y @MMK_R_asterisk -20;
 		pos @MMK_L_Y @MMK_R_backslash 30;
 		pos @MMK_L_Y @MMK_R_colon -60;
 		pos @MMK_L_Y @MMK_R_f -10;
@@ -499,14 +506,17 @@ feature kern {
 		pos @MMK_L_Y P -10;
 		pos @MMK_L_Z @MMK_R_J 30;
 		pos @MMK_L_Z @MMK_R_O -10;
+		pos @MMK_L_Z @MMK_R_asterisk -10;
 		pos @MMK_L_Z @MMK_R_periodcentered -20;
 		pos @MMK_L_c @MMK_R_guilsinglleft -10;
 		pos @MMK_L_c @MMK_R_nine 30;
 		pos @MMK_L_c @MMK_R_t 10;
+		pos @MMK_L_c @MMK_R_trademark 20;
 		pos @MMK_L_c @MMK_R_v 30;
 		pos @MMK_L_c @MMK_R_x 20;
 		pos @MMK_L_e @MMK_R_backslash -30;
 		pos @MMK_L_e @MMK_R_quotesingle -40;
+		pos @MMK_L_f @MMK_R_asterisk 70;
 		pos @MMK_L_f @MMK_R_backslash 100;
 		pos @MMK_L_f @MMK_R_exclam 60;
 		pos @MMK_L_f @MMK_R_f 20;
@@ -520,12 +530,14 @@ feature kern {
 		pos @MMK_L_f @MMK_R_quotesingle 90;
 		pos @MMK_L_f @MMK_R_seven 40;
 		pos @MMK_L_f @MMK_R_t 20;
+		pos @MMK_L_f @MMK_R_trademark 90;
 		pos @MMK_L_f @MMK_R_v 30;
 		pos @MMK_L_f @MMK_R_x 20;
 		pos @MMK_L_g @MMK_R_backslash -30;
 		pos @MMK_L_g @MMK_R_quotesingle -20;
 		pos @MMK_L_g @MMK_R_semicolon 50;
 		pos @MMK_L_g @MMK_R_slash 20;
+		pos @MMK_L_g @MMK_R_trademark -10;
 		pos @MMK_L_k @MMK_R_backslash -20;
 		pos @MMK_L_k @MMK_R_four -20;
 		pos @MMK_L_k @MMK_R_guilsinglleft -20;
@@ -534,14 +546,18 @@ feature kern {
 		pos @MMK_L_k @MMK_R_quotesingle -20;
 		pos @MMK_L_k @MMK_R_two -20;
 		pos @MMK_L_k @MMK_R_v 10;
+		pos @MMK_L_n @MMK_R_asterisk -40;
 		pos @MMK_L_n @MMK_R_backslash -40;
 		pos @MMK_L_n @MMK_R_one -20;
 		pos @MMK_L_n @MMK_R_quotesingle -50;
+		pos @MMK_L_n @MMK_R_trademark -30;
+		pos @MMK_L_o @MMK_R_asterisk -20;
 		pos @MMK_L_o @MMK_R_backslash -40;
 		pos @MMK_L_o @MMK_R_o 20;
 		pos @MMK_L_o @MMK_R_period -20;
 		pos @MMK_L_o @MMK_R_quotesingle -70;
 		pos @MMK_L_o @MMK_R_slash -20;
+		pos @MMK_L_o @MMK_R_trademark -20;
 		pos @MMK_L_o @MMK_R_two -30;
 		pos @MMK_L_q @MMK_R_semicolon 30;
 		pos @MMK_L_r @MMK_R_hyphen -20;

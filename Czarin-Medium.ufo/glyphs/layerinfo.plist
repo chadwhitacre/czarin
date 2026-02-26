@@ -7,9 +7,7 @@
       <key>GSCornerRadius</key>
       <integer>4</integer>
       <key>GSOffsetHorizontal</key>
-      <integer>2</integer>
-      <key>GSOffsetProportional</key>
-      <integer>1</integer>
+      <integer>-2</integer>
       <key>GSOffsetVertical</key>
       <integer>0</integer>
     </dict>

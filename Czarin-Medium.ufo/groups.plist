@@ -81,6 +81,10 @@
     <array>
       <string>Z</string>
     </array>
+    <key>public.kern1.asterisk</key>
+    <array>
+      <string>asterisk</string>
+    </array>
     <key>public.kern1.backslash</key>
     <array>
       <string>backslash</string>
@@ -92,6 +96,10 @@
     <key>public.kern1.colon</key>
     <array>
       <string>colon</string>
+    </array>
+    <key>public.kern1.degree</key>
+    <array>
+      <string>degree</string>
     </array>
     <key>public.kern1.e</key>
     <array>
@@ -222,6 +230,11 @@
     <array>
       <string>three</string>
     </array>
+    <key>public.kern1.trademark</key>
+    <array>
+      <string>trademark</string>
+      <string>registered</string>
+    </array>
     <key>public.kern1.two</key>
     <array>
       <string>two</string>
@@ -298,6 +311,10 @@
       <string>a</string>
       <string>ae</string>
     </array>
+    <key>public.kern2.asterisk</key>
+    <array>
+      <string>asterisk</string>
+    </array>
     <key>public.kern2.backslash</key>
     <array>
       <string>backslash</string>
@@ -305,6 +322,10 @@
     <key>public.kern2.colon</key>
     <array>
       <string>colon</string>
+    </array>
+    <key>public.kern2.degree</key>
+    <array>
+      <string>degree</string>
     </array>
     <key>public.kern2.exclam</key>
     <array>
@@ -441,6 +462,11 @@
     <key>public.kern2.three</key>
     <array>
       <string>three</string>
+    </array>
+    <key>public.kern2.trademark</key>
+    <array>
+      <string>trademark</string>
+      <string>registered</string>
     </array>
     <key>public.kern2.two</key>
     <array>
