@@ -1,0 +1,6 @@
+.venv
+.DS_Store
+
+sources/.ninja_log
+sources/build.ninja
+sources/instance_ufos
