@@ -15,10 +15,13 @@ designed by Edwin W. Shaar, that is different from that of Steel. In
 Koch's student Hans Kuehne added roman lowercases to the capitals of Offenbach,
 published in 1939 by Klingspor.
 
-![Czarin Sample](Czarin-Sample.jpg)
+![Czarin Sample](documentation/Czarin-Sample.jpg)
+
+This repository follows the [Google Fonts upstream repository
+structure](https://googlefonts.github.io/gf-guide/upstream.html).
 
 ## Legal
 
 Copyright &copy; 2025, [Jérôme Knebusch](https://www.jeromeknebusch.net/).
 
-Licensed under the [SIL Open Font Licence (OFL 1.1)](LICENSE.md).
+Licensed under the [SIL Open Font Licence (OFL 1.1)](OFL.txt).
